@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#cardstitle{
+    color: black;
+    text-transform: capitalize;
+    padding-top: 80px;
+    font-size: 38px;
+}
+.cardsimgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;    
+    padding: 0 100px;
+   
+    margin-top: 50px; 
+   
+}
+.cardsimgs .card{
+    background: white;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding: 0 30px;
+    height: 320px;
+    font-size: 12px;
+}
+.cardsimgs img{
+    padding: 60px 50px;
+    width: 200px;
+    gap: 5px;
+    
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.card{
+    box-shadow: 2px 2px 8px #bdbdbd;
+}
+.card h1{
+    padding-top: 40px;
+}
+
+@media(max-width: 1200px){
+    .cardsimgs{
+        grid-template-columns: repeat(3, 2fr);
+
+    }
+    .cards{
+        height: 1800px;
+    }
+}
+@media(max-width: 900px){
+.cardsimgs{
+    grid-template-columns: repeat(1, 3fr);
+}
+.cardsimgs .card{
+    width: 450px;
+}
+}
